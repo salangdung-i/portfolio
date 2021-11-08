@@ -15,6 +15,14 @@
   --color-orange: #feb546;
   --color-black: #000000;
 
+  /* User */
+  --color-user-pink: #ffc5de;
+  --color-user-purple: #3c2d75;
+  --color-user-pale-purple: #d4c5e6;
+  --color-user-pale-blue: #b3e5fc;
+  --color-user-dark-blue: #82b3c9;
+  --color-user-dark-dark-blue: #528398;
+
   /* Font size */
   --font-large: 48px;
   --font-medium: 28px;
@@ -47,7 +55,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-user-purple);
 }
 
 ul {
@@ -99,9 +107,9 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: var(--color-user-pink);
   align-items: center;
-  color: var(--color-white);
+  color: var(--color-user-purple);
   padding: 16px;
 }
 
@@ -120,7 +128,7 @@ p {
   border-radius: var(--size-border-radius);
 }
 .navbar__menu__item.active {
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-user-purple);
 }
 
 .navbar__menu__item:hover {
@@ -129,7 +137,7 @@ p {
 
 /* Home */
 #home {
-  background: url("/imgs/home-background.png") center/cover no-repeat;
+  background: url("/imgs/home-background-memoji.png") center/cover no-repeat;
   display: flex;
   padding: 24px;
   height: 700px;
@@ -138,12 +146,12 @@ p {
 }
 
 .home__contact {
-  color: var(--color-white);
+  color: var(--color-user-purple);
   font-size: var(--font-regular);
   font-weight: var(--weight-blod);
   margin-bottom: 0px;
   padding: 8px 12px;
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-user-purple);
   border-radius: var(--size-border-radius);
 }
 
@@ -170,7 +178,7 @@ p {
   transition: all var(--animation-duration) ease;
 }
 .major__icon:hover i {
-  color: var(--color-pink);
+  color: var(--color-user-dark-dark-blue);
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -179,10 +187,10 @@ p {
   height: 170px;
   line-height: 170px;
   font-size: 70px;
-  border: 1px solid var(--color-blue);
+  border: 1px solid var(--color-user-dark-blue);
   border-radius: 50%;
   margin-bottom: 16px;
-  color: var(--color-blue);
+  color: var(--color-user-dark-blue);
 }
 
 .major__title,
@@ -215,6 +223,17 @@ p {
 
 .job__period {
   font-size: var(--font-micro);
+}
+
+.job__logo {
+  width: 100px;
+  margin: 5px;
+}
+
+.about__job {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0;
 }
 
 /* Skill */
