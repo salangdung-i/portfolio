@@ -52,6 +52,17 @@ ul {
   padding-left: 0;
 }
 
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -111,4 +122,25 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
+}
+
+/* Home */
+#home {
+  background: url("/imgs/home-background.png") center/cover no-repeat;
+  display: flex;
+  padding: 25px;
+  height: 720px;
+  justify-content: center;
+  align-items: end;
+}
+
+/* home의 하단 가운데 정렬하고싶은데 안됨  */
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-blod);
+  margin-bottom: 0px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
