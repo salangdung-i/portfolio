@@ -20,7 +20,23 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
+
   console.log(event.target.dataset.link);
+  const scrollTo = document.querySelector(link);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+
+});
+
+// Handle scrolling when tapping on ContactMe button
+const contactBtn = document.querySelector('.home__contact');
+contactBtn.addEventListener('click', (event) => {
+  const target = event.target;
+  const link = target.dataset.link;
+
+  if (link == null) {
+    return;
+  }
+
   const scrollTo = document.querySelector(link);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
 
