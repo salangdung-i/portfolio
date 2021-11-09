@@ -127,6 +127,7 @@ p {
   background-color: var(--color-user-dark-pink);
   padding: 8px;
   height: 50px;
+  z-index: 1;
 }
 
 #navbar * {
@@ -175,8 +176,8 @@ p {
   background: url("/imgs/home-background-memoji.png") center/cover no-repeat;
   display: flex;
   padding: 40px;
-  height: 700px;
-  padding-top: 300px;
+  height: 900px;
+  padding-top: 100px;
   justify-content: right;
   align-items: end;
 }
@@ -241,7 +242,7 @@ p {
 
 /* Experience */
 
-#timeline {
+#experience {
   background-color: var(--color-light-white);
 }
 
