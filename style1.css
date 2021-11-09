@@ -1,0 +1,74 @@
+
+#timeline {
+  background-color: var(--color-light-white);
+}
+
+
+
+.timelines{
+  border-left:  3px solid #4557bb;
+  padding-top: 16px;
+}
+
+.timeline__title {
+  display: inline-flex; 
+  padding: 8px 24px;
+  background-color: #4557bb;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px /* 1 */
+
+}
+
+.time{
+  display: inline-flex;
+  padding: 8px 24px;
+  background-color: #4557bb;
+  font-weight: 700;
+  color: #fff;
+}
+
+
+.card{
+  padding: 24px 24px 20px 24px;
+  border-radius: 2px;
+  border-left: 3px solid #4557bb;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+  background-color:  #fff;
+}
+
+
+
+
+.timeline__year{
+   padding: 8px 24px; 
+   margin-bottom: 20px;
+}
+
+.timeline__card{
+  position: relative;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.timeline__cards{
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+.timeline__card::before{
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #4557bb;
+  position: absolute;
+  top: 1rem;
+  left: -50%;
+  z-index: -1;
+}
+
+
+
+
+
+
