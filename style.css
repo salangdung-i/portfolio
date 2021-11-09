@@ -18,6 +18,7 @@
   /* User */
   --color-user-pink: #ffc5de;
   --color-user-pale-pink: #fff8ff;
+  --color-user-dark-pink :#ffc1e3;
   --color-user-purple: #3c2d75;
   --color-user-pale-purple: #d4c5e6;
   --color-user-pale-blue: #b3e5fc;
@@ -110,13 +111,33 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
+  height: 80px; 
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-user-pink);
   align-items: center;
   color: var(--color-user-purple);
   padding: 16px;
+  background-color: var(--color-user-pink); 
+  transition: all var(--animation-duration) ease-in-out;
 }
+
+#navbar.navbar--dark {
+  background-color: var(--color-user-dark-pink);
+  padding: 8px;
+  height: 50px;
+}
+
+#navbar * {
+  color : var(--color-user-purple);
+}
+
+.navbar__logo__img {
+  width: 40px;
+  height: 40px;
+  vertical-align: text-top;
+} 
 
 .navbar__menu {
   display: flex;
@@ -153,8 +174,9 @@ p {
 #home {
   background: url("/imgs/home-background-memoji.png") center/cover no-repeat;
   display: flex;
-  padding: 24px;
+  padding: 40px;
   height: 700px;
+  padding-top: 300px;
   justify-content: right;
   align-items: end;
 }
