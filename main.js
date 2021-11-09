@@ -8,8 +8,28 @@ document.addEventListener('scroll', () => {
     navbar.classList.add('navbar--dark');
   } else {
     navbar.classList.remove('navbar--dark');
+
   }
 });
+
+// home 점점 투명하게
+const home = document.querySelector('#home');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+
+
+  if (window.scrollY > homeHeight * 0.3 && window.scrollY < homeHeight * 0.6) {
+    home.classList.add('home--pale');
+    home.classList.remove('home--too--pale');
+  } else if (window.scrollY > homeHeight * 0.6 && window.scrollY < homeHeight) {
+    home.classList.remove('home--pale');
+    home.classList.add('home--too--pale');
+  } else {
+    home.classList.remove('home--pale');
+    home.classList.remove('home--too--pale');
+  }
+});
+
 
 // Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar__menu');

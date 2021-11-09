@@ -191,6 +191,15 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.home--pale {
+  opacity: 0.5;
+}
+
+.home--too--pale {
+  opacity: 0.1;
+
+}
+
 /* Section common */
 .section {
   padding: 50px;
