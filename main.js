@@ -38,6 +38,23 @@ contactBtn.addEventListener('click', (event) => {
   scrollIntoView('#contact');
 });
 
+// Handle click on the "arrow-up" button 
+const arrowBtn = document.querySelector('.arrow-up');
+document.addEventListener('click', () => {
+  scrollIntoView('#home');
+});
+
+// show "arrow up" button when scrolling down
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add('visible');
+  } else {
+    arrowUp.classList.remove('visible');
+  }
+});
+
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
