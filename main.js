@@ -12,22 +12,11 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// home 점점 투명하게
+// make home slowly fade to transparnet as the window scolls down
 const home = document.querySelector('#home');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-
-
-  if (window.scrollY > homeHeight * 0.3 && window.scrollY < homeHeight * 0.6) {
-    home.classList.add('home--pale');
-    home.classList.remove('home--too--pale');
-  } else if (window.scrollY > homeHeight * 0.6 && window.scrollY < homeHeight) {
-    home.classList.remove('home--pale');
-    home.classList.add('home--too--pale');
-  } else {
-    home.classList.remove('home--pale');
-    home.classList.remove('home--too--pale');
-  }
+  home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
 

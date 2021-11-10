@@ -176,7 +176,7 @@ p {
   background: url("/imgs/home-background-memoji.png") center/cover no-repeat;
   display: flex;
   padding: 40px;
-  height: 900px;
+  height: 800px;
   padding-top: 100px;
   justify-content: right;
   align-items: end;
@@ -191,14 +191,6 @@ p {
   border-radius: var(--size-border-radius);
 }
 
-.home--pale {
-  opacity: 0.5;
-}
-
-.home--too--pale {
-  opacity: 0.1;
-
-}
 
 /* Section common */
 .section {
