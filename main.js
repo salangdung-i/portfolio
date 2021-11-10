@@ -40,7 +40,7 @@ contactBtn.addEventListener('click', (event) => {
 
 // Handle click on the "arrow-up" button 
 const arrowBtn = document.querySelector('.arrow-up');
-document.addEventListener('click', () => {
+arrowBtn.addEventListener('click', () => {
   scrollIntoView('#home');
 });
 
@@ -52,6 +52,25 @@ document.addEventListener('scroll', () => {
   } else {
     arrowUp.classList.remove('visible');
   }
+});
+
+//Project
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work_projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (event) => {
+  const filter = event.target.dataset.filter || event.target.parentNode.dataset.filter;
+  if (filter == null) {
+    return;
+  }
+
+  projects.forEach((project) => {
+    if (filter === '*' || filter === project.dataset.type) {
+      project.classList.remove('invisible');
+    } else {
+      project.classList.add('invisible');
+    }
+  });
 });
 
 
