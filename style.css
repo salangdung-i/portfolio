@@ -113,22 +113,25 @@ p {
 #navbar {
   position: fixed;
   width: 100%;
-  height: 80px; 
+  /* height: 80px;  */
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--color-user-purple);
-  padding: 16px;
+  /* padding: 16px 16px 0px 16px; */
+  padding : 16px;
   background-color: var(--color-user-pink); 
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
+
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-user-dark-pink);
   padding: 8px;
   height: 50px;
-  z-index: 1;
 }
+
 
 #navbar * {
   color : var(--color-user-purple);
@@ -138,6 +141,7 @@ p {
   width: 40px;
   height: 40px;
   vertical-align: text-top;
+  
 } 
 
 .navbar__menu {
@@ -166,11 +170,19 @@ p {
 .navbar__toggle-btn {
   top: 24px;
   position: absolute;
-  right: 32px;
+  right: 12px;
   font-size: 24px;
   color: var(--color-user-purple);
   display: none;
+  transition: all var(--animation-duration) ease-in-out;
+  
 }
+
+.navbar--top {
+  top: 12px;
+
+}
+
 
 /* Home */
 #home {
@@ -478,7 +490,8 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
+  font-weight: bolder;
 }
 
 .project__description h3:after {
@@ -486,9 +499,9 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
@@ -592,15 +605,30 @@ p {
   }
 
   #navbar {
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-user-pink);
+    /* padding: 16px 16px 0px 16px; */
   }
 
+  #navbar.navbar--dark {
+    /* padding: 16px; */
+  }
+
+  
   .navbar__menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
+   }
+
+  .navbar__menu.open {
+    display: block;
+    margin: 0;
+
+    background-color: var(--color-user-dark-pink);
   }
 
   .about__majors {

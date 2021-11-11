@@ -3,14 +3,17 @@
 // Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
+const navbartogglebtn = document.querySelector('.navbar__toggle-btn');
 document.addEventListener('scroll', () => {
   if (window.scrollY > navbarHeight) {
     navbar.classList.add('navbar--dark');
+    navbartogglebtn.classList.add('navbar--top');
   } else {
     navbar.classList.remove('navbar--dark');
-
+    navbartogglebtn.classList.remove('navbar--top');
   }
 });
+
 
 // make home slowly fade to transparnet as the window scolls down
 const home = document.querySelector('#home');
@@ -18,6 +21,8 @@ const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+
 
 
 // Handle scrolling when tapping on the navbar menu
@@ -29,8 +34,16 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
 });
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
 
 // Handle scrolling when tapping on ContactMe button
 const contactBtn = document.querySelector('.home__contact');
