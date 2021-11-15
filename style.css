@@ -183,13 +183,16 @@ p {
 
 /* Home */
 #home {
-  background: url("/imgs/home-background-memoji.png") center/cover no-repeat;
   display: flex;
   padding: 40px;
   height: 800px;
   padding-top: 100px;
   justify-content: right;
   align-items: end;
+  background-image: url("/imgs/home-background-memoji.png"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .home__contact {
@@ -273,7 +276,7 @@ p {
 
 .timelines{
   border-left: 3px solid var(--color-grey);
-  /* padding-top: 16px; */
+  padding-top: 16px;
   margin: 50px;
 }
 
@@ -298,6 +301,14 @@ p {
   color: #fff;
 }
 
+.time.posco-logo {
+  background-color: #00578a;
+}
+
+.time.hyundai-logo {
+  background-color: #009ade;
+}
+
 
 .card{
   padding: 24px 24px 20px 24px;
@@ -307,6 +318,7 @@ p {
   background-color:  #fff;
   font-size: var(--font-small);
   color : var(--color-grey);
+  margin-bottom: 20px;
 }
 
 
@@ -694,12 +706,14 @@ p {
     padding: 4px;
   }
 
-
-
   #navbar.navbar--dark {
     /* padding: 16px; */
   }
 
+  .home__contact {
+    bottom: 10px;
+    right: 10px;
+  }
   
   .navbar__menu {
     flex-direction: column;
