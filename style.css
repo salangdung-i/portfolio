@@ -668,6 +668,7 @@ p {
 
   .section, .section__timeline {
     padding: 16px;
+    padding-top: 40px;
   }
 
   .navbar__toggle-btn {
