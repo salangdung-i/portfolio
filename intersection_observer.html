@@ -50,8 +50,9 @@
     const boxes = document.querySelectorAll('.box');
 
     const option = {
-      root: null, //viewport
+      root: document.querySelector('.container'), //viewport
       rootMargin: '0px',
+      threshold: 1, // 0~1(100%) 
     }
     const callback = (entries, observer) => {
       entries.forEach(entry => {
