@@ -11,7 +11,9 @@
   <script src="https://kit.fontawesome.com/5bc9f7e5d7.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600&family=Open+Sans:wght@400;600;700&family=Oswald:wght@600&family=Yeon+Sung&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
 </head>
@@ -29,7 +31,7 @@
       <li class="navbar__menu__item" data-link="#experience">Experience</li>
       <li class="navbar__menu__item" data-link="#work">My work</li>
       <li class="navbar__menu__item" data-link="#skills">Skills</li>
-      <li class="navbar__menu__item" data-link="#etc">Etc</li>
+      <li class="navbar__menu__item" data-link="#etc">Activities</li>
       <li class="navbar__menu__item" data-link="#contact">Contact</li>
     </ul>
 
@@ -48,36 +50,52 @@
 
   <!-- About -->
   <section id="about" class="section section__container">
-    <h1>About me</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
-      Blanditiis dolorum tempora laboriosam ad quia facere accusantium accusamus <br>
-      deserunt distinctio. Perspiciatis nulla expedita, eius laboriosam placeat <br>
-      rem quia ex iste quibusdam.
-    </p>
-    <div class="about__majors">
-      <div class="major">
-        <div class="major__icon">
-          <i class="fab fa-js-square"></i>
-        </div>
-        <h2 class="major__title">Front-end</h2>
-        <div class="major__description">
-          HTML, CSS, JavaScript,
-          <br>React, TypeScript
-        </div>
-      </div>
-      <div class="major">
-        <div class="major__icon">
-          <i class="fas fa-server"></i>
-        </div>
-        <h2 class="major__title">
-          Back-end
-        </h2>
-        <div class="major__description">
-          Java, Sql, Spring
-        </div>
-      </div>
+    <header>
+      <h1>About me</h1>
+    </header>
+    <div class="about--text">
+      <p>
+        안녕하세요! 저는 1년 차 풀 스택 개발자 임은지입니다.<br>
+        학부 졸업작품으로 'IoT 유모차'를 만드는 과정에서 처음 앱 개발에 대해 접하게 되었습니다.<br>
+        유모차와 연동된 APP 만들면서 마치 어려운 게임의 퀘스트를 깨는 듯한 재미와 성취감을 경험하고 개발자로의 꿈을 품게 되었습니다.<br>
+        공부한 것을 잊지 않게 기록하고, 온전히 내 것으로 만드는 것이 중요하다고 생각하여 기술 블로그를 운영하고 있습니다.<br>
+        건강 그리고 유연한 의사소통에 관심이 많습니다.
+      </p>
     </div>
   </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>Skills</h1>
+
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <h2 class="major__title">Front-end</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript,
+            <br>React, TypeScript
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">
+            Back-end
+          </h2>
+          <div class="major__description">
+            Java, Sql, Spring
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 
   <!-- Timeline -->
   <section id="experience" class="section__timeline">
@@ -121,6 +139,8 @@
                   <img src="imgs/posco_ict_logo.png" alt="posco logp" class="card__content-logo">
                   <p>
                     MES 3.0 통합관제 팀 <br>
+                    &nbsp; posco 철강 프로세스 전체의 재고 및 제작 상황을 확인하고, 다음 근무자에게 지시사항을 기록하는 시스템<br>
+                    &nbsp; 10년간의 재난상황(지진)을 확인, SMS 우선순위 대상자 조회, 변경, 기준이상의 지진발생시 SMS 전송하는 시스템<br>
                     &nbsp; 진행기간 : 2020.02 ~ 2020.12<br>
                     &nbsp; 개발환경 : Visual Code, Inteli J, orange for oracle, Java, SQL, React, Bi-canvas, Bi-matrix<br>
                     &nbsp; 담당업무 : 업무일지(관제,용선) 16종 신규 개발 및 안정화, 지진 4종 신규 개발 및 안정화 <br>
@@ -234,92 +254,41 @@
       </div>
     </div>
   </section>
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <div class="section__container">
 
-      <h1>Skills</h1>
-      <h2>skills & Attributes</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
-        Soluta aperiam quod distinctio ab. Ea, voluptatem est? Illo iste, <br>
-        amet ullam veniam tempore non quidem ut fugiat dignissimos, <br>
-        dolores corporis est?
-      </p>
-      <div class="skillset">
-        <div class="skillset__left">
-          <h3 class="skillset__title">Skills</h3>
-          <div class="skill">
-            <div class="skill__description">
-              <span>HTML</span>
-              <span>상</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 99%;"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>CSS</span>
-              <span>중</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 66%" ;></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>JavaScript</span>
-              <span>상</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 99%" ;></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>Java</span>
-              <span>중</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 66%" ;></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>SQL</span>
-              <span>하</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 33%" ;></div>
-            </div>
-          </div>
-        </div>
-        <div class="skillset__right">
-          <div class="tools">
-            <h3 class="skillset__title">Tools</h3>
-            <ul class="tools__list">
-              <li><span>Visual code</span></li>
-              <li><span>IntelliJ</span></li>
-              <li><span>I-Canvers</span></li>
-            </ul>
-          </div>
-          <div class="etc">
-            <h3 class="skillset__title">Etc</h3>
-            <ul class="etc__list">
-              <li><span>Git</span></li>
-              <li><span>Math</span></li>
-              <li><span></span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ETC -->
   <section id="etc" class="section">
     <div class="section__container">
-      <h1>Etc</h1>
+      <h1>Activities & Certificate</h1>
+      <div class="activies">
+        <div class="active">
+          <div class="active__icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="active__content">
+            <ul>
+              <li>졸업작품 : IoT 유모차</li>
+              <li>수상 : 2018 한이음 공모전 / 은상 / 과학기술정보통신부 / 18.11.30</li>
+              <li>한이음 학술대회 / 우수상 / 한국정보산업연합회 / 18.12.21</li>
+              <li>방송출연 : SBS 생활경제 "한이음엑스포, 학생들의 아이디어가 빛났다!"</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="active">
+          <div class="active__icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="active__content">
+            <!-- 본 발명은 유모차에 IoT 센서를 설치하고 IoT 센서 정보에 기초하여 영유아의 수면과 기상 여부 및 기상 후 행동 유형에 대한 정보 등을 제공하고, 유모차의 구동을 제어함으로써 자동으로
+            영유아를 케어할 수 있는 IoT를 이용한 스마트 유모차 시스템에 관한 것입니다. -->
+          </div>
+        </div>
+
+
+      </div>
+
+
       <div class="others">
 
         <div class="box">
@@ -367,16 +336,18 @@
   <!-- Contact -->
   <section id="contact" class="section">
     <h1 class="contact__title">Contact me!</h1>
-    <h3 class="contact__email">dladmswl92@naver.com</h3>
-    <div class="contact__links">
-      <a href="https://github.com/salangdung-i" target="_blank">
-        <i class="fab fa-github-square"></i>
-      </a>
-      <a href="https://salangdung.tistory.com" target="_blank">
-        <i class="fas fa-laptop-house"></i>
-      </a>
+    <div class="contants">
+      <h3 class="contact__data">Email : dladmswl92@naver.com</h3>
+      <h3 class="contact__data">Github : https://github.com/salangdung-i</h3>
+      <h3 class="contact__data">Blog : https://salangdung.tistory.com</h3>
     </div>
-    <h1>Thank you!</h1>
+
+
+    <!-- <i class="fab fa-github-square"></i>
+    <i class="fas fa-laptop-house"></i> -->
+
+
+    <h1 class="contact__title">Thank you!</h1>
   </section>
 
   <!-- Arrow up -->
