@@ -113,9 +113,10 @@ const sectionIds = [
   '#experience',
   '#work',
   '#skills',
-  '#etc',
-  '#contact'
+  '#activities',
+  // '#contact'
 ];
+
 const sections = sectionIds.map(id => document.querySelector(id));
 const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
 

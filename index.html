@@ -26,12 +26,12 @@
           alt="favicon img"></img>Eunji</a>
     </div>
     <ul class="navbar__menu">
-      <li class=" navbar__menu__item active" data-link="#home">Home</li>
+      <li class="navbar__menu__item active" data-link="#home">Home</li>
       <li class="navbar__menu__item" data-link="#about">About</li>
+      <li class="navbar__menu__item" data-link="#skills">Skills</li>
       <li class="navbar__menu__item" data-link="#experience">Experience</li>
       <li class="navbar__menu__item" data-link="#work">My work</li>
-      <li class="navbar__menu__item" data-link="#skills">Skills</li>
-      <li class="navbar__menu__item" data-link="#etc">Activities</li>
+      <li class="navbar__menu__item" data-link="#activities">Activities</li>
       <li class="navbar__menu__item" data-link="#contact">Contact</li>
     </ul>
 
@@ -76,20 +76,41 @@
           </div>
           <h2 class="major__title">Front-end</h2>
           <div class="major__description">
-            HTML, CSS, JavaScript,
-            <br>React, TypeScript
+            <ul class="description--ul">
+              <li>HTML, CSS, JS(ES5+)</li>
+              <li>React</li>
+              <li>TypeScript</li>
+            </ul>
           </div>
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fas fa-server"></i>
           </div>
-          <h2 class="major__title">
-            Back-end
-          </h2>
+          <h2 class="major__title">Back-end</h2>
           <div class="major__description">
-            Java, Sql, Spring
+            <ul class="description--ul">
+              <li>Java</li>
+              <li>Oracle SQL, MySql, JPA</li>
+            </ul>
           </div>
+
+        </div>
+
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h2 class="major__title">Tool</h2>
+          <div class="major__description">
+            <ul class="description--ul">
+              <li>Git, Bitbucket, SVN </li>
+              <li>Eclipse, IntelliJ</li>
+              <li>Visual Studio Code</li>
+              <li>Bi-canvas, UbiReport</li>
+            </ul>
+          </div>
+
         </div>
       </div>
 
@@ -256,8 +277,8 @@
   </section>
 
 
-  <!-- ETC -->
-  <section id="etc" class="section">
+  <!-- Activities & Certificate -->
+  <section id="activities" class="section">
     <div class="section__container">
       <h1>Activities & Certificate</h1>
       <div class="activies">
@@ -266,78 +287,83 @@
             <i class="fas fa-graduation-cap"></i>
           </div>
           <div class="active__content">
-            <ul>
-              <li>졸업작품 : IoT 유모차</li>
-              <li>수상 : 2018 한이음 공모전 / 은상 / 과학기술정보통신부 / 18.11.30</li>
+            <ul class="content-ul">
+              <li>졸업작품 : 황혼육아를 위한 IoT 유모차</li>
+              <li>수상 : 2018 한이음 공모전 / 은상(700팀중 4등) / 과학기술정보통신부 / 18.11.30</li>
               <li>한이음 학술대회 / 우수상 / 한국정보산업연합회 / 18.12.21</li>
               <li>방송출연 : SBS 생활경제 "한이음엑스포, 학생들의 아이디어가 빛났다!"</li>
             </ul>
-          </div>
 
+          </div>
         </div>
         <div class="active">
           <div class="active__icon">
             <i class="fas fa-certificate"></i>
           </div>
           <div class="active__content">
-            <!-- 본 발명은 유모차에 IoT 센서를 설치하고 IoT 센서 정보에 기초하여 영유아의 수면과 기상 여부 및 기상 후 행동 유형에 대한 정보 등을 제공하고, 유모차의 구동을 제어함으로써 자동으로
+            <ul class="content-ul">
+              <li>특허 : ＩｏＴ를 이용한 스마트 유모차 시스템</li>
+              <li>자격증 : 정보처리기사 </li>
+            </ul>
+          </div>
+          <!-- 본 발명은 유모차에 IoT 센서를 설치하고 IoT 센서 정보에 기초하여 영유아의 수면과 기상 여부 및 기상 후 행동 유형에 대한 정보 등을 제공하고, 유모차의 구동을 제어함으로써 자동으로
             영유아를 케어할 수 있는 IoT를 이용한 스마트 유모차 시스템에 관한 것입니다. -->
-          </div>
         </div>
-
-
       </div>
 
 
-      <div class="others">
+    </div>
 
-        <div class="box">
-          <header class="box__header">
-            <div class="box__title">
-              특허
-            </div>
-          </header>
-          <div class="box__content">
-            <a href="1020180170668.pdf" download>
-              <img src="imgs/patent-1.png" alt="certificate img" class="etc-img">
-            </a>
-            <p class="etc-text">
-              본 발명은 유모차에 IoT 센서를 설치하고 IoT 센서 정보에 기초하여 영유아의 수면과 기상 여부 및 기상 후 행동 유형에 대한 정보 등을 제공하고, 유모차의 구동을 제어함으로써 자동으로
-              영유아를 케어할 수 있는 IoT를 이용한 스마트 유모차 시스템에 관한 것입니다.
-            </p>
+
+    <div class="others">
+
+      <div class="box">
+        <header class="box__header">
+          <div class="box__title">
+            특허
           </div>
+        </header>
+        <div class="box__content">
+          <a href="1020180170668.pdf" download>
+            <img src="imgs/patent-1.png" alt="certificate img" class="etc-img">
+          </a>
+          <p class="etc-text">
+            본 발명은 유모차에 IoT 센서를 설치하고 IoT 센서 정보에 기초하여 영유아의 수면과 기상 여부 및 기상 후 행동 유형에 대한 정보 등을 제공하고, 유모차의 구동을 제어함으로써 자동으로
+            영유아를 케어할 수 있는 IoT를 이용한 스마트 유모차 시스템에 관한 것입니다.
+          </p>
         </div>
-
-        <div class="box">
-          <header class="box__header">
-            <div class="box__title">
-              공모전 & 수상
-            </div>
-          </header>
-          <div class="box__content">
-            <a href="https://youtu.be/o_iTuNASD5A?t=109" target="_blank">
-              <img src="imgs/haniumit_click.png" alt="certificate img" class="etc-thumbnail">
-            </a>
-            <p class="etc-text">
-              [수상]<br>
-              2018 한이음 공모전 / 은상 / 과학기술정보통신부 / 18.11.30 <br>
-              한이음 학술대회 / 우수상 / 한국정보산업연합회 / 18.12.21<br>
-              [방송출연]<br>
-              SBS 생활경제 "한이음엑스포, 학생들의 아이디어가 빛났다!"
-            </p>
-          </div>
-        </div>
-
-
-
       </div>
+
+      <div class="box">
+        <header class="box__header">
+          <div class="box__title">
+            공모전 & 수상
+          </div>
+        </header>
+        <div class="box__content">
+          <a href="https://youtu.be/o_iTuNASD5A?t=109" target="_blank">
+            <img src="imgs/haniumit_click.png" alt="certificate img" class="etc-thumbnail">
+          </a>
+          <p class="etc-text">
+            [수상]<br>
+            2018 한이음 공모전 / 은상 / 과학기술정보통신부 / 18.11.30 <br>
+            한이음 학술대회 / 우수상 / 한국정보산업연합회 / 18.12.21<br>
+            [방송출연]<br>
+            SBS 생활경제 "한이음엑스포, 학생들의 아이디어가 빛났다!"
+          </p>
+        </div>
+      </div>
+
+
+
+    </div>
     </div>
   </section>
   <!-- Contact -->
   <section id="contact" class="section">
     <h1 class="contact__title">Contact me!</h1>
     <div class="contants">
-      <h3 class="contact__data">Email : dladmswl92@naver.com</h3>
+      <h3 class="contact__data">Email : ej.yim0322@gmail.com</h3>
       <h3 class="contact__data">Github : https://github.com/salangdung-i</h3>
       <h3 class="contact__data">Blog : https://salangdung.tistory.com</h3>
     </div>

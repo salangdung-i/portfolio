@@ -61,12 +61,12 @@ a {
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
+  /* list-style: none; */
+  padding-left:30px;
 }
 
 li {
-  list-style: none;
+  list-style: square;
 }
 
 button {
@@ -158,6 +158,7 @@ p {
   cursor: pointer;
   border-radius: var(--size-border-radius);
   border: 1px solid transparent;
+  list-style: none;
 }
 
 .navbar__menu__item.active {
@@ -232,10 +233,18 @@ p {
   margin: 80px 0;
 }
 
+.major {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
 .major__icon i {
   transition: all var(--animation-duration) ease;
 }
 .major__icon:hover i {
+  display: center;
   color: var(--color-user-dark-dark-blue);
   transform: rotate(-30deg) scale(1.1);
 }
@@ -245,10 +254,12 @@ p {
   height: 170px;
   line-height: 170px;
   font-size: 70px;
-  border: 1px solid var(--color-user-dark-blue);
+  /* border: 1px solid var(--color-user-dark-blue); */
+  border: 1px solid black;
   border-radius: 50%;
   margin-bottom: 16px;
-  color: var(--color-user-dark-blue);
+  /* color: var(--color-user-dark-blue); */
+  /* color: blue; */
 }
 
 
@@ -258,11 +269,18 @@ p {
   color: var(--color-dark-grey);
 }
 
+
+
+
 .major__title {
   font-weight: var(--weight-semi-bold);
 }
 .major__description {
   font-size: var(--font-small);
+}
+
+.description--ul {
+  text-align: left;
 }
 
 /* Experience */
@@ -569,6 +587,24 @@ p {
 .active__content {
   border: 1px solid black;
 }
+
+
+/* .ul.content {
+  text-align: left;
+  margin: 0px 20px;
+ } */
+
+.content-ul {
+   border: 1px solid black;
+   text-align: left;
+ }
+.content-ul>li {
+  /* list-style: square; */
+  /* padding-left: 10px; */
+  margin: 0px 10px;
+
+}
+
 .others {
   margin: 40px;
 }
@@ -577,9 +613,6 @@ p {
   display: flex;
   margin: 20px 0px;
 }
-
-
-
 
 .etc-img {
   width: 150px;
@@ -631,6 +664,19 @@ p {
 
 .box__content {
   display: flex;
+}
+
+
+.activies {
+  display: flex;
+  justify-content: space-around;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 /* Contact */
