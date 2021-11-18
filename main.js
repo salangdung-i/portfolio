@@ -110,11 +110,11 @@ workBtnContainer.addEventListener('click', (event) => {
 const sectionIds = [
   '#home',
   '#about',
+  '#skills',
   '#experience',
   '#work',
-  '#skills',
   '#activities',
-  // '#contact'
+  '#contact'
 ];
 
 const sections = sectionIds.map(id => document.querySelector(id));
