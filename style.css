@@ -194,7 +194,7 @@ p {
   justify-content: right;
   align-items: end;
   background-image: url("../../imgs/home-background-memoji-2.png");   
-  /* background-image: url("../../portfolio/imgs/home-background-memoji.png");  */
+  /* background-image: url("../../portfolio/imgs/home-background-memoji-2.png");  */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -569,27 +569,7 @@ p {
   background-color: var(--color-dark-white);
 }
 
-
-
-
-
-
-
-
-
-
 /* Activities & Certificate */
-
-#activities {
-  /* background-color: var(--color-user-pale-purple); */
-}
-
-.activies {
-  display: flex;
-  justify-content: space-around;
-  margin: 80px 0px;
-}
-
 .active--imgs {
   display: flex;
   justify-content: space-around;
@@ -606,15 +586,10 @@ p {
   text-align: left;
 }
 
-.active__content {
-  /* border: 1px solid black; */
-}
-
-
-
 .content-ul {
    text-align: left;
  }
+
 .content-ul>li {
   margin: 0px 10px;
 }
@@ -760,6 +735,17 @@ p {
 
   .card p{
     display: none;
+  }
+
+  .active--imgs {
+    display: flex;
+    flex-direction: column; 
+    margin: 40px 0px;
+  }
+
+  .active__img {
+    width: 300px;
+    margin: 16px 0px;
   }
 
   .arrow-up {
