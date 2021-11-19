@@ -645,7 +645,7 @@ p {
   
   #home {
     height: 450px;
-    padding: 16px 10px;
+    padding: 16px 0px;
   }
 
   .section, .section__timeline {
@@ -692,6 +692,7 @@ p {
   .navbar__menu.open {
     display: block;
     margin: 0;
+    padding-left: 0px;
     background-color: var(--color-user-dark-pink);
   }
 
