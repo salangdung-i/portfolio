@@ -193,8 +193,8 @@ p {
   padding-top: 100px;
   justify-content: right;
   align-items: end;
-  background-image: url("../../imgs/home-background-memoji-2.png");   
-  /* background-image: url("../../portfolio/imgs/home-background-memoji-2.png");  */
+  /* background-image: url("../../imgs/home-background-memoji-2.png");    */
+  background-image: url("../../portfolio/imgs/home-background-memoji-2.png"); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
