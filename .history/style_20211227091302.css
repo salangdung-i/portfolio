@@ -190,8 +190,8 @@ p {
   padding-top: 100px;
   justify-content: right;
   align-items: end;
-  /* background-image: url("../../imgs/home-background_final.png");    */
-  background-image: url("../../portfolio/imgs/home-background_final.png"); 
+  background-image: url("../../imgs/home-background_final.png");   
+  /* background-image: url("../../portfolio/imgs/home-background_final.png");  */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -224,15 +224,8 @@ p {
 
 /* About */
 .about--text {
-  margin: 40px 70px 80px 70px;
-  text-align: left;
-}
-
-
-/* Skill */
-
-#skills {
-  background-color: var(--color-user-pale-blue);
+  margin: 40px 0px 80px 0px;
+  /* margin-bottom: 80px; */
 }
 
 .about__majors {
@@ -268,10 +261,15 @@ p {
   color: var(--color-dark-grey);
 }
 
+
+
 .major__title,
 .major__description {
   color: var(--color-dark-grey);
 }
+
+
+
 
 .major__title {
   font-weight: var(--weight-semi-bold);
@@ -352,15 +350,11 @@ p {
 }
 
 
+
 .timeline__year{
    padding: 8px 24px; 
    margin-bottom: 20px;
 }
-
-.timeline__ul > * {
-  list-style: none;
-}
-
 
 .card__content {
   display: flex;
@@ -390,6 +384,62 @@ p {
 
 
 
+/* Skill */
+
+#skills {
+  background-color: var(--color-user-pale-blue);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset__title {
+  color: var(--color-white);
+}
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+.skill__bar {
+  width: 100%;
+  height: 7px;
+  background-color: var(--color-grey);
+}
+.skill__value {
+  height: 5px;
+  background-color: var(--color-user-dark-dark-blue);
+}
+/* TODO : skill 화면 열었을때 스킬바가 채워지는 애니메이션 넣기 */
+.skill__value:hover {
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+  padding: 20px;
+}
 
 /* Work */
 #work {
@@ -402,6 +452,7 @@ p {
 
 .category__btn {
   border: 1px solid var(--color-user-dark-purple);
+  /* var(--color-user-purple); */
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   font-weight: bold;
@@ -414,6 +465,7 @@ p {
 .category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-user-light-purple);
+  /* var(--color-user-purple); */
   color: var(--color-white);
 }
 
@@ -457,7 +509,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 280px;
-  height: 300px;
+  height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
 }
@@ -468,34 +520,31 @@ p {
 
 .project__img {
   max-width: 100%;
-  max-height: 250px; 
-  position: absolute;
-  top: 20px;
+  max-height: 100%;
 }
 
 .project__description > span {
   color: white;
   font-size: var(--font-micro);
 }
-
 .project__description {
   background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 100px;
+  height: 100%;
   position: absolute;
-  top: 180px;
+  top: 0;
   left: 0;
-  /* opacity: 0.?; */
+  opacity: 0;
   transform: translateY(10px);
   transition: all var(--animation-duration) ease-in;
 }
 
 .project:hover .project__description {
-  /* opacity: 0.8; */
-  /* transform: translateY(0px); */
+  opacity: 0.8;
+  transform: translateY(0px);
 }
 
 .project__description h3 {
@@ -612,6 +661,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-user-pink);
+    /* padding: 16px 16px 0px 16px; */
     padding: 4px;
   }
 
@@ -622,6 +672,8 @@ p {
   .home__contact {
     bottom: 0px;
     right: 10px;
+    /* width: 80px; */
+    /* height: 18px; */
     font-size: var(--font-micro);
   }
   
@@ -675,6 +727,10 @@ p {
   .box *{
     display: flex;
     flex-direction: column;
+  }
+
+  .card p{
+    display: none;
   }
 
   .active--imgs {
