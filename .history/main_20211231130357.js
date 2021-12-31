@@ -23,6 +23,7 @@ document.addEventListener('scroll', () => {
   console.log(window.scrollY);
   console.log(homeHeight);
   console.log(1 - (window.scrollY / homeHeight));
+
 });
 
 

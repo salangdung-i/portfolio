@@ -20,9 +20,6 @@ const home = document.querySelector('#home');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - (window.scrollY / homeHeight);
-  console.log(window.scrollY);
-  console.log(homeHeight);
-  console.log(1 - (window.scrollY / homeHeight));
 });
 
 
