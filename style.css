@@ -189,8 +189,8 @@ p {
   padding-top: 100px;
   justify-content: right;
   align-items: end;
-  /* background-image: url("../../imgs/home-background_final_final.png");    */
-  background-image: url("../../portfolio/imgs/home-background_final_final.png"); 
+  /* background-image: url("../../imgs/home-background_final_final_final.png");    */
+  background-image: url("../../portfolio/imgs/home-background_final_final_final.png"); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -664,9 +664,11 @@ p {
     margin: 16px;
   }
 
+  .timeline__ul{
+    text-align: left;
+  }
+
   .timeline__card *{
-    display: flex;   
-    align-items: center;
     flex-direction: column;
   }
 
