@@ -77,7 +77,7 @@ button {
   outline: none;
 }
 
-.fa,.fab,.fad,.fal,.far,.fas,{
+.fa,.fab,.fad,.fal,.far,.fas {
 	font-weight: 900 !important;
 }
 
@@ -108,7 +108,8 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'BMHannaAir';
+  /* font-family: 'Noto Sans KR', sans-serif; */
 }
 
 
