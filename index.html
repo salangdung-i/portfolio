@@ -1,208 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eunji's Portfolio</title>
+    <meta
+      name="description"
+      content="Port for world-renowned software engineer Eunji"
+    />
+    <meta name="author" content="Eunji" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <!-- <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/d17aff7ea0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600&family=Open+Sans:wght@400;600;700&family=Oswald:wght@600&family=Yeon+Sung&display=swap&family=Bakbak+One&display=swap&family=Noto+Sans+KR:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://webfontworld.github.io/BMHannaAir/BMHannaAir.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eunji's Portfolio</title>
-  <meta name="description" content="Port for world-renowned software engineer Eunji" />
-  <meta name="author" content="Eunji">
-  <link rel="icon" type="image/png" href="imgs/favicon.png" />
-  <!-- <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> -->
-  <script src="https://kit.fontawesome.com/d17aff7ea0.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600&family=Open+Sans:wght@400;600;700&family=Oswald:wght@600&family=Yeon+Sung&display=swap&family=Bakbak+One&display=swap&family=Noto+Sans+KR:wght@100;300&display=swap"
-    rel="stylesheet">
-  <link href="https://webfontworld.github.io/BMHannaAir/BMHannaAir.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <script src="main.js" defer></script>
-</head>
-
-<body>
-  <!-- Navbar  -->
-  <nav id="navbar">
-    <div class="navbar__logo">
-      <a href="#"><img class="navbar__logo__img" src="imgs/favicon.png" width="30" height="30"
-          alt="favicon img">Eunji</a>
-
-    </div>
-    <ul class="navbar__menu">
-      <li class="navbar__menu__item active" data-link="#home">Home</li>
-      <li class="navbar__menu__item" data-link="#about">About</li>
-      <li class="navbar__menu__item" data-link="#skills">Skills</li>
-      <li class="navbar__menu__item" data-link="#experience">Experience</li>
-      <li class="navbar__menu__item" data-link="#work">My work</li>
-      <li class="navbar__menu__item" data-link="#activities">Activities</li>
-      <li class="navbar__menu__item" data-link="#contact">Contact</li>
-    </ul>
-
-    <!-- Toggle button -->
-    <button class="navbar__toggle-btn">
-      <i class="fas fa-bars"></i>
-    </button>
-  </nav>
-
-  <!-- Home -->
-  <section id="home">
-    <button class="home__contact" data-link="#contact">
-      <i class="fas fa-share-square"></i>
-      Contact Me</button>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section section__container">
-    <header>
-      <h1>About me</h1>
-    </header>
-    <div class="about--text">
-      <p>
-        1년 차 개발자로 SI 회사에서 웹 개발 경험이 있습니다.<br><br>
-        유연한 의사소통을 중요하게 생각합니다.<br>
-        비 개발 직군과 협업하는 일이 많았습니다. 기획자와의 적극적인 커뮤니케이션을 통해 산업 도메인의 지식을 쌓았고,<br>
-        현업사용자와 소통하면서 다양한 개발 경험을 쌓았습니다.<br><br>
-
-        기술 블로그에 공부한 내용을 기록하고 정리합니다. 또, 앞으로 나아가기 위해 매주 회고를 작성합니다.<br>
-        개발자로서 성장을 위해 다양한 강의, 멘토링에 참여하면서 배우길 원합니다.
-      </p>
-
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <div class="section__container">
-      <h1>Skills</h1>
-
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-js-square"></i>
-          </div>
-          <h2 class="major__title">Front-end</h2>
-          <div class="major__description">
-            <ul class="description--ul">
-              <li>JS(ES6+)</li>
-              <li>HTML, CSS</li>
-              <li>React</li>
-              <li>React Hook</li>
-            </ul>
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fas fa-server"></i>
-          </div>
-          <h2 class="major__title">Back-end</h2>
-          <div class="major__description">
-            <ul class="description--ul">
-              <li>Java</li>
-              <li>Oracle SQL, MySql</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="major">
-          <div class="major__icon">
-            <i class="fas fa-cogs"></i>
-          </div>
-          <h2 class="major__title">Tool</h2>
-          <div class="major__description">
-            <ul class="description--ul">
-              <li>Git, Bitbucket, SVN </li>
-              <li>Eclipse, IntelliJ</li>
-              <li>Visual Studio Code</li>
-              <li>Bi-canvas, UbiReport</li>
-              <li>Nexacro</li>
-            </ul>
-          </div>
-        </div>
+  <body>
+    <!-- Navbar  -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <a href="#"
+          ><img
+            class="navbar__logo__img"
+            src="imgs/favicon.png"
+            width="30"
+            height="30"
+            alt="favicon img"
+          />Eunji</a
+        >
       </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#experience">Experience</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#activities">Activities</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <button class="home__contact" data-link="#contact">
+        <i class="fas fa-share-square"></i>
+        Contact Me
+      </button>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <header>
+        <h1>About me</h1>
+      </header>
       <div class="about--text">
-        <h2 class="content-header">
-          <i class="fa-solid fa-comment-dots"></i>
-          기술이력
-        </h2>
         <p>
-          대학 시절 졸업작품으로 ‘IoT 유모차’를 만들었습니다. 유모차와 연동되어 조작하는 유모차 APP을 App Inventor로 개발하면서 처음으로 앱 개발을 경험하였고, 이에 대한 흥미로 안드로이드
-          프로그래밍 수업을 수강하며, JAVA 언어에 대한 흥미를 느끼고 개발자로서의 꿈을 품게 되었습니다.
-          <br /><br />
-          졸업 이후 앱/웹 개발자를 목표로 KH 정보교육원에서 5개월의 기간 동안 자바FRAMEWORK 기반 웹 응용 SW 개발자 양성과정을 수료했습니다.<br />
-          그 결과 [ JAVA / SQL / HTML/CSS / ES5 / JDBC / jQuery ] 등의 배운 것을 적용하여 파이널 프로젝트에서 팀원들과 쇼핑몰 프로젝트를 구현할 수 있었습니다.
-          <br /><br />
-          이후 20년 2월 SI 회사에 입사하여 포스코와 현대 제철에서 프로젝트를 진행했습니다.
-          포스코에서 MES 3.0 차세대 생산 관제 시스템 구축하면서, <br />
-          [개발환경 및 툴 : Bitbucket, IntelliJ, VScode, Bi-canvas ] [ 개발언어 : Java, Oracle
-          SQL, JPA ]를 사용했습니다.<br />
-          또한 현대제철에서는 단조 MES 시스템 구축하면서 [ 개발환경 : SVN, Nexacro, UbiReport, FSP ][ 개발언어 : Javascript, Tibero SQL ] 를 사용해
-          개발하였습니다.
-          <br /><br />
-          21년 6월부터는 FE로드맵을 참고하여 [ HTML, CSS, JS(ES6+) ][ React, React Hook ][ Git ]를 공부하고 기술 블로그와 Github에 내용을 정리하였습니다.
+          SI 기업에서 웹 개발 경험과 AI 기업에서 프론트엔드 개발 경험이
+          있습니다.<br /><br />
+
+          유연한 의사소통을 중요하게 생각합니다. <br />
+          비 개발 직군과 협업하는 일이 많았습니다. 기획자와의 적극적인
+          커뮤니케이션을 통해 산업 도메인의 지식을 쌓았고, 현업사용자와
+          소통하면서 다양한 개발 경험을 쌓았습니다. <br /><br />
+          기술 블로그에 공부한 내용을 기록하고 정리합니다. 또, 앞으로 나아가기
+          위해 회고를 작성합니다. 개발자로서 성장을 위해 다양한 강의, 멘토링에
+          참여하면서 실력을 쌓기 위해 노력합니다.
         </p>
       </div>
-      <ul class="content-ul">
+    </section>
 
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
 
-      </ul>
-    </div>
-  </section>
+        <div class="about__majors">
+          <div class="major">
+            <div class="major__icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h2 class="major__title">Front-end</h2>
+            <div class="major__description">
+              <ul class="description--ul">
+                <li>HTML, CSS, JS(ES6+)</li>
+                <li>React, Vue</li>
+                <li>TypeScript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="major">
+            <div class="major__icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h2 class="major__title">Back-end</h2>
+            <div class="major__description">
+              <ul class="description--ul">
+                <li>Java</li>
+                <li>Oracle SQL, MySql</li>
+              </ul>
+            </div>
+          </div>
 
-
-  <!-- Timeline -->
-  <section id="experience" class="section__timeline">
-    <div class="section__container">
-      <h1>Experience information</h1>
-      <h2>개발 경력 1년 4개월</h2>
-      <div class="timelines c">
-        <div class="timeline__group">
-          <span class="timeline__title c" aria-hidden="true">COMPANY</span>
-        </div>
-        <div class="timeline__group">
-          <span class="timeline__title c" aria-hidden="true">ATOS</span>
-          <div class="timeline__cards">
-            <div class="timeline__card card">
-              <div class="card__content">
-                <img src="imgs/atos_logo.png" alt="posco logp" class="card__content-logo">
-                <ul class="timeline__ul">
-                  <li>ITO 사업부 사원</li>
-                  <li>근무기간 : 2020.02 ~ 2021.06</li>
-                  <li>담당업무 : WEB 개발</li>
-                </ul>
-              </div>
+          <div class="major">
+            <div class="major__icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h2 class="major__title">Tool</h2>
+            <div class="major__description">
+              <ul class="description--ul">
+                <li>Git, Bitbucket, SVN</li>
+                <li>Eclipse, IntelliJ, VS Code</li>
+                <li>Bi-canvas</li>
+                <li>Nexacro</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="timelines">
+        <div class="about--text">
+          <h2 class="content-header">
+            <i class="fa-solid fa-comment-dots"></i>
+            기술이력
+          </h2>
+          <p>
+            대학 시절 졸업작품으로 ‘IoT 유모차’를 만들었습니다. 유모차와
+            연동되어 조작하는 유모차 APP을 App Inventor로 개발하면서 처음으로 앱
+            개발을 경험하였고, 이에 대한 흥미로 안드로이드 프로그래밍 수업을
+            수강하며, JAVA 언어에 대한 흥미를 느끼고 개발자로서의 꿈을 품게
+            되었습니다.
+            <br /><br />
+            졸업 이후 앱/웹 개발자를 목표로 KH 정보교육원에서 5개월의 기간
+            동안 자바FRAMEWORK 기반 웹 응용 SW 개발자 양성과정을
+            수료했습니다.<br />
+            그 결과 [ JAVA / SQL / HTML/CSS / ES5 / JDBC / jQuery ] 등의 배운
+            것을 적용하여 파이널 프로젝트에서 팀원들과 쇼핑몰 프로젝트를 구현할
+            수 있었습니다.
+            <br /><br />
+            이후 20년 2월 SI 회사에 입사하여 포스코와 현대 제철에서 프로젝트를
+            진행했습니다. 포스코에서 MES 3.0 차세대 생산 관제 시스템 구축하면서,
+            <br />
+            [개발환경 및 툴 : Bitbucket, IntelliJ, VScode, Bi-canvas ] [
+            개발언어 : Java, Oracle SQL, JPA ]를 사용했습니다.<br />
+            또한 현대제철에서는 단조 MES 시스템 구축하면서 [ 개발환경 : SVN,
+            Nexacro, UbiReport, FSP ][ 개발언어 : Javascript, Tibero SQL ] 를
+            사용해 개발하였습니다.
+            <br /><br />
+            21년 6월부터는 FE로드맵을 참고하여 [ HTML, CSS, JS(ES6+) ][ React,
+            React Hook ][ Git ]를 공부하고 기술 블로그와 Github에 내용을
+            정리하였습니다.
+          </p>
+        </div>
+        <ul class="content-ul"></ul>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="experience" class="section__timeline">
+      <div class="section__container">
+        <h1>Experience information</h1>
+        <div class="timelines c">
           <div class="timeline__group">
-            <span class="timeline__title" aria-hidden="true">PROJECT</span>
+            <span class="timeline__title c" aria-hidden="true">COMPANY</span>
+          </div>
+          <div class="timeline__group">
+            <span class="timeline__title c" aria-hidden="true">ATOS</span>
+            <div class="timeline__cards">
+              <div class="timeline__card card">
+                <div class="card__content">
+                  <img
+                    src="imgs/atos_logo.png"
+                    alt="posco logo"
+                    class="card__content-logo"
+                  />
+                  <ul class="timeline__ul">
+                    <li>ITO 사업부 사원</li>
+                    <li>근무기간 : 2020.02 ~ 2021.06</li>
+                    <li>담당업무 : WEB 개발</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timelines">
             <div class="timeline__group">
-              <span class="timeline__year time" aria-hidden="true">2020</span>
+              <span class="timeline__title" aria-hidden="true">PROJECT</span>
+              <div class="timeline__group">
+                <span class="timeline__year time" aria-hidden="true">2020</span>
+                <div class="timeline__cards">
+                  <div class="timeline__card card">
+                    <header class="card__header">
+                      <time class="time posco-logo" datetime="2020-02-11">
+                        POSCO ICT
+                      </time>
+                    </header>
+                    <div class="card__content">
+                      <img
+                        src="imgs/posco_ict_logo.png"
+                        alt="posco logo"
+                        class="card__content-logo"
+                      />
+                      <ul class="timeline__ul">
+                        <li>포스코 MES 3.0 차세대 생산관제 시스템 구축</li>
+                        <li>진행기간 : 2020.02 ~ 2020.12</li>
+                        <li>
+                          담당업무 :
+                          <ul>
+                            <li><b>생산 관제일지 FE/BE 담당</b></li>
+                            <ul>
+                              <li>
+                                개발환경﹒툴 : IntelliJ, Bitbucket, Bi-Canvas |
+                                개발언어 : Java, Javascript, SQL
+                              </li>
+                              <li>
+                                포스코 제철소 내부 전체 소재, 재고 현황 및
+                                증감을 관리하는 시스템 개발
+                              </li>
+                              <li>
+                                주도적으로 툴 사용법과 오류 해결을 위한 가이드
+                                문서를 작성, 사내교육을 진행
+                              </li>
+                            </ul>
+                            <li><b>재난 관련 화면 개발/안정화 BE 담당</b></li>
+                            <ul>
+                              <li>
+                                개발환경 : IntelliJ, Bitbucket | 개발언어 :
+                                Java, SQL
+                              </li>
+                              <li>
+                                10년간의 재난현황을 확인하고, SMS 우선순위
+                                대상자 조회, 변경, 지진 발생 시 SMS 전송하는
+                                시스템의 BE개발
+                              </li>
+                            </ul>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__group">
+              <span class="timeline__year time" aria-hidden="true">2021</span>
               <div class="timeline__cards">
                 <div class="timeline__card card">
                   <header class="card__header">
-                    <time class="time posco-logo" datetime="2020-02-11">
-                      POSCO ICT
-                    </time>
+                    <time class="time hyundai-logo" datetime="2021-01-02"
+                      >HYUNDAI STEEL</time
+                    >
                   </header>
                   <div class="card__content">
-                    <img src="imgs/posco_ict_logo.png" alt="posco logp" class="card__content-logo">
+                    <img
+                      src="imgs/hyundai_logo.gif"
+                      alt="hyundai logo"
+                      class="card__content-logo"
+                    />
                     <ul class="timeline__ul">
-                      <li>포스코 MES 3.0 차세대 생산관제 시스템 구축</li>
-                      <li>진행기간 : 2020.02 ~ 2020.12</li>
-                      <li>담당업무 :
+                      <li>현대제철 순천단조공장 단조 MES 시스템 구축</li>
+                      <li>진행기간 : 2021.01 ~ 2021.06</li>
+                      <li>
+                        담당업무 :
                         <ul>
-                          <li><b>생산 관제일지 FE/BE 담당</b></li>
+                          <li><b>단조 MES FE/BE 담당</b></li>
                           <ul>
-                            <li>개발환경﹒툴 : IntelliJ, Bitbucket, Bi-Canvas | 개발언어 : Java, Javascript, SQL </li>
-                            <li>포스코 제철소 내부 전체 소재, 재고 현황 및 증감을 관리하는 시스템 개발 </li>
-                            <li>주도적으로 툴 사용법과 오류 해결을 위한 가이드 문서를 작성, 사내교육을 진행</li>
+                            <li>
+                              개발환경﹒툴 : Nexacro, FSP | 개발언어 :
+                              Javascript, SQL
+                            </li>
+                            <li>100여종의 화면 Conversion</li>
                           </ul>
-                          <li><b>재난 관련 화면 개발/안정화 BE 담당</b></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__group">
+              <span class="timeline__year time" aria-hidden="true">2022</span>
+              <div class="timeline__cards">
+                <div class="timeline__card card">
+                  <header class="card__header">
+                    <time class="time hyundai-logo" datetime="2021-01-02"
+                      >ALCHERA</time
+                    >
+                  </header>
+                  <div class="card__content">
+                    <img
+                      src="imgs/alchera_logo.png"
+                      alt="alchera logo"
+                      style="padding: 10px 10px; width: 190px; height: 100%"
+                    />
+                    <ul class="timeline__ul">
+                      <li>알체라 | 이미지 데이터 라벨링 서비스 플랫폼 구축</li>
+                      <li>진행기간 : 2022.05 ~ 2022.07</li>
+                      <li>
+                        담당업무 :
+                        <ul>
+                          <li>
+                            <b
+                              >데이터 학습을 위한 이미지 데이터 라벨링 프로젝트
+                              FE 개발</b
+                            >
+                          </li>
                           <ul>
-                            <li>개발환경 : IntelliJ, Bitbucket | 개발언어 : Java, SQL </li>
-                            <li>10년간의 재난현황을 확인하고, SMS 우선순위 대상자 조회, 변경, 지진 발생 시 SMS 전송하는 시스템의 BE개발</li>
+                            <li>
+                              개발환경﹒툴 : VS code, Figma, Confluence, Jira,
+                              Git | 개발언어 : Vue.js
+                            </li>
+                            <li>
+                              차트를 이용하여 작업별, 프로젝트 별 진행 현황을
+                              확인할 수 있는 대시보드 화면 개발
+                            </li>
+                            <li>
+                              관리자 대시보드의 패널에서 관리자 작업(프로젝트
+                              CRUD, 엑셀 다운로드, 작업 상태)을 처리할 수 있는
+                              기능 구현
+                            </li>
+                            <li>실시간으로 조회할 수 있는 알림창 개발</li>
+                            <li>
+                              Jira 및 Confluence를 활용한 일정 관리 및 협업ro,
+                              FSP | 개발언어 : Javascript, SQL
+                            </li>
                           </ul>
                         </ul>
                       </li>
@@ -212,179 +349,319 @@
               </div>
             </div>
           </div>
-          <div class="timeline__group">
-            <span class="timeline__year time" aria-hidden="true">2021</span>
-            <div class="timeline__cards">
-              <div class="timeline__card card">
-                <header class="card__header">
-                  <time class="time hyundai-logo" datetime="2021-01-02">HYUNDAI STEEL</time>
-                </header>
-                <div class="card__content">
-                  <img src="imgs/hyundai_logo.gif" alt="hyundai logp" class="card__content-logo">
-                  <ul class="timeline__ul">
-                    <li>현대제철 순천단조공장 단조 MES 시스템 구축</li>
-                    <li>진행기간 : 2021.01 ~ 2021.06</li>
-                    <li>담당업무 :
-                      <ul>
-                        <li><b>단조 MES FE/BE 담당</b></li>
-                        <ul>
-                          <li>개발환경﹒툴 : Nexacro, FSP | 개발언어 : Javascript, SQL </li>
-                          <li>100여종의 화면 Conversion</li>
-                        </ul>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>My work</h1>
+        <h2>Projects</h2>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">
+            All<span class="category__count">9</span>
+          </button>
+          <button class="category__btn" data-filter="basic">
+            Web Basic<span class="category__count">2</span>
+          </button>
+          <button class="category__btn" data-filter="react">
+            React<span class="category__count">4</span>
+          </button>
+          <button class="category__btn" data-filter="TypeScript">
+            TypeScript<span class="category__count">3</span>
+          </button>
+        </div>
+        <div class="work__projects">
+          <a
+            href="https://github.com/wanted-pre-onboarding-fe-8/8ripbtoz"
+            class="project"
+            target="blank"
+            data-type="TypeScript"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-8ripbtoz.png"
+              alt="business-card-marker imgs"
+            />
+            <div class="project__description">
+              <h3>8ripbtoz</h3>
+              <span>TypeScript를 이용한 호텔 예약 사이트</span>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Work -->
-  <section id="work" class="section">
-    <div class="section__container">
-      <h1>My work</h1>
-      <h2>Projects</h2>
-      <div class="work__categories">
-        <button class="category__btn selected" data-filter="*">
-          All<span class="category__count">8</span>
-        </button>
-        <button class="category__btn" data-filter="basic">
-          Web Basic<span class="category__count">3</span>
-        </button>
-        <button class="category__btn" data-filter="react">
-          React<span class="category__count">5</span>
-        </button>
-      </div>
-      <div class="work__projects">
-        <a href="https://github.com/salangdung-i/business-card-marker-1" class="project" target="blank"
-          data-type="react">
-          <img class="project__img" src="imgs/projects/project-cardmaker.png" alt="business-card-marker imgs">
-          <div class=" project__description">
-            <h3>Business card marker</h3>
-            <span>React Hooks를 이용한 비지니스 카드메이커 📇</span>
-          </div>
-        </a>
-        <a href="https://github.com/salangdung-i/youtube" class="project" target="blank" data-type="react">
-          <img class="project__img" src="imgs/projects/project-youtube.png" alt="youtube img">
-          <div class="project__description">
-            <h3>Youtube</h3>
-            <span>React를 이용해 만드는 유튜브</span>
-          </div>
-        </a>
-        <a href="https://github.com/salangdung-i/news-viewer" class="project" target="blank" data-type="react">
-          <img class="project__img" src="imgs/projects/project-newsviewer.png" alt="newsviewer img">
-          <div class="project__description">
-            <h3>News viewer</h3>
-            <span>React를 이용해 만드는 뉴스뷰어</span>
-          </div>
-        </a>
-        <a href="https://github.com/salangdung-i/react-todo-app" class="project" target="blank" data-type="react">
-          <img class="project__img" src="imgs/projects/project-todo.png" alt="todo img">
-          <div class="project__description">
-            <h3>To do</h3>
-            <span>React를 이용해 만드는 일정관리</span>
-          </div>
-        </a>
-        <a href="https://github.com/salangdung-i/habit-tracker" class="project" target="blank" data-type="react">
-          <img class="project__img" src="imgs/projects/project-habit.png" alt="habit-tracker img">
-          <div class="project__description">
-            <h3>Habit tracker</h3>
-            <span>React를 이용해 만드는 습관기록 </span>
-          </div>
-        </a>
-        <a href="https://github.com/salangdung-i/carrot-game" class="project" target="blank" data-type="basic">
-          <img class="project__img" src="imgs/projects/project-carrot.png" alt="carrot-game img">
-          <div class="project__description">
-            <h3>Carrot game</h3>
-            <span>Vanilla JS를 이용해 만드는 당근게임🥕</span>
-          </div>
-        </a>
-        <a href="https://github.com/salangdung-i/to-do-list-app" class="project" target="blank" data-type="basic">
-          <img class="project__img" src="imgs/projects/project-memo.png" alt="memo img">
-          <div class="project__description">
-            <h3>Memo</h3>
-            <span>Vanilla JS를 이용해 만드는 Memo📝</span>
-          </div>
-        </a>
-        <a href="https://github.com/salangdung-i/shopping-game" class="project" target="blank" data-type="basic">
-          <img class="project__img" src="imgs/projects/project-shopping.png" alt="shopping-game img">
-          <div class="project__description">
-            <h3>Shopping game</h3>
-            <span>Vanilla JS를 이용한 미니 쇼핑 게임🛍</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Activities & Certificate -->
-  <section id="activities" class="section">
-    <div class="section__container">
-      <h1>Activities & Certificate</h1>
-      <div class="active--imgs">
-        <div class="active-img">
-          <a href="https://youtu.be/o_iTuNASD5A?t=109" target="_blank">
-            <img class="active__img" src="imgs/haniumit.jpeg" alt="haniumit thumbnail">
           </a>
-        </div>
-        <div class="active-img">
-          <a href="https://youtu.be/RUdjBgxtxtU" target="_blank">
-            <img class="active__img" src="imgs/iot-img.jpeg" alt="youtube thumbnail">
+          <a
+            href="https://github.com/wanted-pre-onboarding-fe-8/8ngall"
+            class="project"
+            target="blank"
+            data-type="TypeScript"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-8ngall.png"
+              alt="business-card-marker imgs"
+            />
+            <div class="project__description">
+              <h3>8ngall</h3>
+              <span>TypeScript를 이용한 수업 일정 페이지</span>
+            </div>
           </a>
-        </div>
-        <div class="active-img">
-          <a href="1020180170668.pdf" download>
-            <img class="active__img" src="imgs/certificate-2.png" alt="certificate pdf image">
+          <a
+            href="https://github.com/wanted-pre-onboarding-fe-8/8oogle"
+            class="project"
+            target="blank"
+            data-type="TypeScript"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-8oogle.png"
+              alt="business-card-marker imgs"
+            />
+            <div class="project__description">
+              <h3>8oogle</h3>
+              <span>TypeScript를 이용한 광고 플랫폼 대시 보드</span>
+            </div>
           </a>
+
+          <a
+            href="https://github.com/wanted-pre-onboarding-fe-8/8flix"
+            class="project"
+            target="blank"
+            data-type="react"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-8flix.png"
+              alt="business-card-marker imgs"
+            />
+            <div class="project__description">
+              <h3>8flix</h3>
+              <span>React 이용한 영화 정보 사이트</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/salangdung-i/business-card-marker-1"
+            class="project"
+            target="blank"
+            data-type="react"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-cardmaker.png"
+              alt="business-card-marker imgs"
+            />
+            <div class="project__description">
+              <h3>Business card marker</h3>
+              <span>React Hooks를 이용한 비지니스 카드메이커 📇</span>
+            </div>
+          </a>
+          <!-- <a
+            href="https://github.com/salangdung-i/youtube"
+            class="project"
+            target="blank"
+            data-type="react"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-youtube.png"
+              alt="youtube img"
+            />
+            <div class="project__description">
+              <h3>Youtube</h3>
+              <span>React를 이용해 만드는 유튜브</span>
+            </div>
+          </a> -->
+          <a
+            href="https://github.com/salangdung-i/news-viewer"
+            class="project"
+            target="blank"
+            data-type="react"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-newsviewer.png"
+              alt="newsviewer img"
+            />
+            <div class="project__description">
+              <h3>News viewer</h3>
+              <span>React를 이용해 만드는 뉴스뷰어</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/salangdung-i/react-todo-app"
+            class="project"
+            target="blank"
+            data-type="react"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-todo.png"
+              alt="todo img"
+            />
+            <div class="project__description">
+              <h3>To do</h3>
+              <span>React를 이용해 만드는 일정관리</span>
+            </div>
+          </a>
+          <!-- <a
+            href="https://github.com/salangdung-i/habit-tracker"
+            class="project"
+            target="blank"
+            data-type="react"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-habit.png"
+              alt="habit-tracker img"
+            />
+            <div class="project__description">
+              <h3>Habit tracker</h3>
+              <span>React를 이용해 만드는 습관기록 </span>
+            </div>
+          </a> -->
+          <a
+            href="https://github.com/salangdung-i/carrot-game"
+            class="project"
+            target="blank"
+            data-type="basic"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-carrot.png"
+              alt="carrot-game img"
+            />
+            <div class="project__description">
+              <h3>Carrot game</h3>
+              <span>Vanilla JS를 이용해 만드는 당근게임🥕</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/salangdung-i/to-do-list-app"
+            class="project"
+            target="blank"
+            data-type="basic"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-memo.png"
+              alt="memo img"
+            />
+            <div class="project__description">
+              <h3>Memo</h3>
+              <span>Vanilla JS를 이용해 만드는 Memo📝</span>
+            </div>
+          </a>
+          <!-- <a
+            href="https://github.com/salangdung-i/shopping-game"
+            class="project"
+            target="blank"
+            data-type="basic"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project-shopping.png"
+              alt="shopping-game img"
+            />
+            <div class="project__description">
+              <h3>Shopping game</h3>
+              <span>Vanilla JS를 이용한 미니 쇼핑 게임🛍</span>
+            </div>
+          </a> -->
         </div>
       </div>
+    </section>
 
-      <div class="active__content">
-        <h2 class="content-header"><i class="fas fa-graduation-cap"></i> Activities</h2>
-        <ul class="content-ul">
-          <li>졸업작품 : 황혼육아를 위한 IoT 유모차</li>
-          <li><a href="https://www.mk.co.kr/news/it/view/2018/11/697202/" target="_blank">수상 : 2018 한이음 공모전 /
-              은상(700팀중 4등) /
-              과학기술정보통신부 / 18.11.30</a></li>
-          <li>한이음 학술대회 / 우수상 / 한국정보산업연합회 / 18.12.21</li>
-          <li>
-            <a href="https://youtu.be/o_iTuNASD5A?t=109" target="_blank">방송출연 : SBS 생활경제 "한이음엑스포, 학생들의 아이디어가 빛났다!"</a>
-          </li>
-        </ul>
-        <h2 class="content-header"><i class="fas fa-certificate"></i> Certificate</h2>
-        <ul class="content-ul">
-          <li><a href="1020180170668.pdf" download>특허 : ＩｏＴ를 이용한 스마트 유모차 시스템</a></li>
-        </ul>
+    <!-- Activities & Certificate -->
+    <section id="activities" class="section">
+      <div class="section__container">
+        <h1>Activities & Certificate</h1>
+        <div class="active--imgs">
+          <div class="active-img">
+            <a href="https://youtu.be/o_iTuNASD5A?t=109" target="_blank">
+              <img
+                class="active__img"
+                src="imgs/haniumit.jpeg"
+                alt="haniumit thumbnail"
+              />
+            </a>
+          </div>
+          <div class="active-img">
+            <a href="https://youtu.be/RUdjBgxtxtU" target="_blank">
+              <img
+                class="active__img"
+                src="imgs/iot-img.jpeg"
+                alt="youtube thumbnail"
+              />
+            </a>
+          </div>
+          <div class="active-img">
+            <a href="1020180170668.pdf" download>
+              <img
+                class="active__img"
+                src="imgs/certificate-2.png"
+                alt="certificate pdf image"
+              />
+            </a>
+          </div>
+        </div>
 
+        <div class="active__content">
+          <h2 class="content-header">
+            <i class="fas fa-graduation-cap"></i> Activities
+          </h2>
+          <ul class="content-ul">
+            <li>졸업작품 : 황혼육아를 위한 IoT 유모차</li>
+            <li>
+              <a
+                href="https://www.mk.co.kr/news/it/view/2018/11/697202/"
+                target="_blank"
+                >수상 : 2018 한이음 공모전 / 은상(700팀중 4등) /
+                과학기술정보통신부 / 18.11.30</a
+              >
+            </li>
+            <li>한이음 학술대회 / 우수상 / 한국정보산업연합회 / 18.12.21</li>
+            <li>
+              <a href="https://youtu.be/o_iTuNASD5A?t=109" target="_blank"
+                >방송출연 : SBS 생활경제 "한이음엑스포, 학생들의 아이디어가
+                빛났다!"</a
+              >
+            </li>
+          </ul>
+          <h2 class="content-header">
+            <i class="fas fa-certificate"></i> Certificate
+          </h2>
+          <ul class="content-ul">
+            <li>
+              <a href="1020180170668.pdf" download
+                >특허 : ＩｏＴ를 이용한 스마트 유모차 시스템</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h1 class="contact__title">Contact me!</h1>
-    <div class="contants">
-      <h3 class="contact__data">Email : ej.yim0322@gmail.com</h3>
-      <h3 class="contact__data"><a href="https://github.com/salangdung-i" target="blank">Github :
-          https://github.com/salangdung-i</a>
-      </h3>
-      <h3 class="contact__data">
-        <a href="https://salangdung.tistory.com" target="blank"> Blog : https://salangdung.tistory.com</a>
-      </h3>
-    </div>
-    <h1 class="contact__title">Thank you!</h1>
-  </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Contact me!</h1>
+      <div class="contants">
+        <h3 class="contact__data">Email : ej.yim0322@gmail.com</h3>
+        <h3 class="contact__data">
+          <a href="https://github.com/salangdung-i" target="blank"
+            >Github : https://github.com/salangdung-i</a
+          >
+        </h3>
+        <h3 class="contact__data">
+          <a href="https://salangdung.tistory.com" target="blank">
+            Blog : https://salangdung.tistory.com</a
+          >
+        </h3>
+      </div>
+      <h1 class="contact__title">Thank you!</h1>
+    </section>
 
-  <!-- Arrow up -->
-  <button class="arrow-up">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-</body>
-
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
 </html>
